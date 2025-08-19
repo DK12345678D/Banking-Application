@@ -15,11 +15,7 @@ public class SequenceController {
 
     private final SequenceService sequenceService;
 
-    /**
-     * Generates an account number.
-     *
-     * @return The generated account number.
-     */
+  
     @PostMapping
     public Sequence generateAccountNumber() {
         return sequenceService.create();

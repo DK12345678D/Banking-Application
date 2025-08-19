@@ -11,13 +11,7 @@ import com.app.account.service.model.dto.external.UserDto;
 @FeignClient(name = "user-service", configuration = FeignConfiguration.class)
 public interface UserService {
 
-	/**
-	 * Retrieves a user by their ID.
-	 *
-	 * @param userId the ID of the user to retrieve
-	 * @return a ResponseEntity containing the user DTO if found, or an empty body
-	 *         with a not found status code
-	 */
+	
 	@GetMapping("/api/users/{userId}")
 	ResponseEntity<UserDto> readUserById(@PathVariable Long userId);
 }

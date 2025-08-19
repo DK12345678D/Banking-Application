@@ -8,8 +8,7 @@
         <version>2.7.14</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.app
-    </groupId>
+    <groupId>com.app</groupId>
     <artifactId>apigateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>API Gateway</name>

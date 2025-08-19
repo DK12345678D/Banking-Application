@@ -43,15 +43,7 @@ public class FundTransferServiceImpl implements FundTransferService {
 
     private final FundTransferMapper fundTransferMapper = new FundTransferMapper();
 
-    /**
-     * Transfers funds from one account to another.
-     *
-     * @param fundTransferRequest The request object containing the details of the fund transfer.
-     * @return The response object indicating the status of the fund transfer.
-     * @throws ResourceNotFound If the requested account is not found on the server.
-     * @throws AccountUpdateException If the account status is pending or inactive.
-     * @throws InsufficientBalance If the required amount to transfer is not available.
-     */
+   
     @Override
     public FundTransferResponse fundTransfer(FundTransferRequest fundTransferRequest) {
 
@@ -92,14 +84,7 @@ public class FundTransferServiceImpl implements FundTransferService {
                 .message("Fund transfer was successful").build();
     }
 
-    /**
-     * Transfers funds from one account to another within the system.
-     *
-     * @param fromAccount The account to transfer funds from.
-     * @param toAccount The account to transfer funds to.
-     * @param amount The amount of funds to transfer.
-     * @return The transaction reference number.
-     */
+   
     private String internalTransfer(Account fromAccount, Account toAccount, BigDecimal amount) {
 
         fromAccount.setAvailableBalance(fromAccount.getAvailableBalance().subtract(amount));
@@ -126,13 +111,7 @@ public class FundTransferServiceImpl implements FundTransferService {
         return transactionReference;
     }
 
-    /**
-     * Retrieves the details of a fund transfer based on the given reference ID.
-     *
-     * @param referenceId The reference ID of the fund transfer.
-     * @return The FundTransferDto containing the details of the fund transfer.
-     * @throws ResourceNotFound if the fund transfer is not found.
-     */
+    
     @Override
     public FundTransferDto getTransferDetailsFromReferenceId(String referenceId) {
 
@@ -141,12 +120,7 @@ public class FundTransferServiceImpl implements FundTransferService {
                 .orElseThrow(() -> new ResourceNotFound("Fund transfer not found", GlobalErrorCode.NOT_FOUND));
     }
 
-    /**
-     * Retrieves a list of fund transfers associated with the given account ID.
-     *
-     * @param accountId The ID of the account
-     * @return A list of fund transfer DTOs
-     */
+   
     @Override
     public List<FundTransferDto> getAllTransfersByAccountId(String accountId) {
 

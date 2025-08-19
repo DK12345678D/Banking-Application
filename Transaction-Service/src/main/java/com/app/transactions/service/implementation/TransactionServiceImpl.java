@@ -41,15 +41,7 @@ public class TransactionServiceImpl implements TransactionService {
     @Value("${spring.application.ok}")
     private String ok;
 
-    /**
-     * Adds a transaction based on the provided TransactionDto.
-     *
-     * @param  transactionDto  the TransactionDto object containing the transaction details
-     * @return                 a Response object indicating the success of the transaction
-     * @throws ResourceNotFound     if the requested account is not found on the server
-     * @throws AccountStatusException     if the account is inactive or closed
-     * @throws InsufficientBalance     if there is insufficient balance in the account
-     */
+   
     @Override
     public Response addTransaction(TransactionDto transactionDto) {
 
@@ -87,13 +79,7 @@ public class TransactionServiceImpl implements TransactionService {
                 .responseCode(ok).build();
     }
 
-    /**
-     * Completes the internal transaction by updating the status of each transaction
-     * and saving them to the transaction repository.
-     *
-     * @param transactionDtos the list of transaction DTOs to be processed
-     * @return a response indicating the completion of the transaction
-     */
+   
     @Override
     public Response internalTransaction(List<TransactionDto> transactionDtos, String transactionReference) {
 
@@ -116,12 +102,7 @@ public class TransactionServiceImpl implements TransactionService {
                 .message("Transaction completed successfully").build();
     }
 
-    /**
-     * Retrieves a list of transaction requests for a given account ID.
-     *
-     * @param accountId the ID of the account
-     * @return a list of transaction requests
-     */
+   
     @Override
     public List<TransactionRequest> getTransaction(String accountId) {
 
@@ -136,12 +117,7 @@ public class TransactionServiceImpl implements TransactionService {
                 }).collect(Collectors.toList());
     }
 
-    /**
-     * Retrieves a list of TransactionRequests based on a transaction reference.
-     *
-     * @param transactionReference The reference ID of the transaction
-     * @return List of TransactionRequests matching the transaction reference
-     */
+   
     @Override
     public List<TransactionRequest> getTransactionByTransactionReference(String transactionReference) {
 

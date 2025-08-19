@@ -24,12 +24,7 @@ public class KeyCloakProperties {
 
     private static Keycloak keycloakInstance = null;
 
-    /**
-     * Returns an instance of Keycloak.
-     * If the instance is null, it creates a new instance using the provided configuration.
-     *
-     * @return The Keycloak instance
-     */
+    
     public Keycloak getKeycloakInstance() {
 
         if (keycloakInstance == null) {
@@ -45,11 +40,7 @@ public class KeyCloakProperties {
         return keycloakInstance;
     }
 
-    /**
-     * Returns the realm.
-     *
-     * @return the realm
-     */
+   
     public String getRealm() {
         return realm;
     }

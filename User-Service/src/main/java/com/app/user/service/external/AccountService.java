@@ -11,12 +11,7 @@ import com.app.user.service.model.external.Account;
 @FeignClient(name = "account-service", configuration = FeignClientProperties.FeignClientConfiguration.class)
 public interface AccountService {
 
-    /**
-     * Retrieves an account by its account number.
-     *
-     * @param  accountNumber  the account number to search for
-     * @return                the ResponseEntity containing the account
-     */
+    
     @GetMapping("/accounts")
     ResponseEntity<Account> readByAccountNumber(@RequestParam String accountNumber);
 }
