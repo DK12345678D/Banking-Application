@@ -68,7 +68,7 @@ Spring Data JPA is used for data access and manipulation. It provides a reposito
 MySQL is a popular open-source relational database management system. It is widely used for storing and managing data in web applications. When used with Spring Data JPA, MySQL serves as the database where the application's data is persisted. Spring Boot provides easy integration with MySQL through auto-configuration and properties settings, allowing developers to quickly set up and use MySQL in their applications.
 
 ### ☁️ Spring Cloud
-Spring Cloud is used for building microservices architectures. It provides tools for configuration management, service discovery, circuit breakers, intelligent routing, and more.
+Spring Cloud is used for building microservices architectures. It provides tools for configuration management, service discovery, circuit breakers, intelligent routing, and more. 
 
 ### 🔍 Eureka Server
 Eureka Server is a service registry used for service discovery. It allows microservices to register themselves at runtime and discover other registered services.
