@@ -3,7 +3,7 @@
 
 - [🔍 About](#-about) 
 - [🏛️ Architecture](#-architecture)
-- [🚀 Microservices](#-microservices)
+- [🚀 Microservices](#-microservices) 
 - [🛠️ Technologies Used](#-technologies-used)
     - [🌱 Spring Boot](#spring-boot)
     - [🗄️ Spring Data JPA](#spring-data-jpa)
