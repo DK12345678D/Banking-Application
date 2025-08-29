@@ -2,7 +2,7 @@
 <h2>📋📚 Table of Contents</h2>   
  
 - [🔍 About](#-about)  
-- [🏛️ Architecture](#-architecture) 
+- [🏛️ Architecture](#-architecture)    
 - [🚀 Microservices](#-microservices) 
 - [🛠️ Technologies Used](#-technologies-used)
     - [🌱 Spring Boot](#spring-boot)
