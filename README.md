@@ -5,7 +5,7 @@
 - [🏛️ Architecture](#-architecture)      
 - [🚀 Microservices](#-microservices) 
 - [🛠️ Technologies Used](#-technologies-used) 
-    - [🌱 Spring Boot](#spring-boot) 
+    - [🌱 Spring Boot](#spring-boot)   
     - [🗄️ Spring Data JPA](#spring-data-jpa)
     - [🐬 MySQL](#mysql)
     - [☁️ Spring Cloud](#spring-cloud)
