@@ -1,4 +1,4 @@
-<h1 align="center">🏛️ Banking Application with Spring Boot Microservices 🏛️</h1>         
+<h1 align="center">🏛️ Banking Application with Spring Boot Microservices 🏛️</h1>            
 <h2>📋📚 Table of Contents</h2>                                                   
                      
 - [🔍 About](#-about)                
